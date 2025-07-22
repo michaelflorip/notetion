@@ -6,16 +6,26 @@ This guide walks you through deploying your Notetion public version to free host
 
 **Best for**: Easy deployment, automatic updates, built for Streamlit apps
 
+### Repository Requirements:
+- ⚠️ **Repository must be PUBLIC** for free tier
+- 💡 **Alternative**: Use GitHub Codespaces or other platforms for private repos
+
 ### Steps:
 
-1. **Push to GitHub**:
+1. **Make repository public** (if it's currently private):
+   - Go to your GitHub repo settings
+   - Scroll to "Danger Zone"
+   - Click "Change repository visibility"
+   - Select "Make public"
+
+2. **Push to GitHub**:
    ```bash
    git add .
    git commit -m "Add public version for deployment"
    git push origin main
    ```
 
-2. **Deploy on Streamlit Cloud**:
+3. **Deploy on Streamlit Cloud**:
    - Go to [share.streamlit.io](https://share.streamlit.io)
    - Sign in with GitHub
    - Click "New app"
@@ -23,7 +33,7 @@ This guide walks you through deploying your Notetion public version to free host
    - Set main file path: `streamlit_app_public.py`
    - Click "Deploy!"
 
-3. **Your app will be live at**: `https://your-app-name.streamlit.app`
+4. **Your app will be live at**: `https://your-app-name.streamlit.app`
 
 ### Pros:
 - ✅ **Completely free**
@@ -32,9 +42,19 @@ This guide walks you through deploying your Notetion public version to free host
 - ✅ **No configuration needed**
 
 ### Cons:
+- ❌ **Repository must be PUBLIC**
 - ❌ Apps sleep after inactivity
 - ❌ Limited resources
 - ❌ Streamlit branding
+
+### 🔒 **Privacy Alternatives for Private Repos:**
+
+If you want to keep your repository private, consider these options instead:
+
+1. **Railway** - Works with private repos, $5/month free credit
+2. **Render** - Supports private repos on free tier
+3. **Fly.io** - Works with private repos
+4. **GitHub Codespaces** - Works with private repos (60 hours/month free)
 
 ---
 
